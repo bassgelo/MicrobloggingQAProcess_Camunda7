@@ -27,7 +27,7 @@
 
   <properties>
     <camunda.base.version>7.18.0</camunda.base.version>
-    <camunda.version>${camunda.base.version}-ee</camunda.version>
+    <camunda.version>${camunda.base.version}</camunda.version>
     <springBoot.version>2.7.14</springBoot.version>
 
     <maven.compiler.source>11</maven.compiler.source>
@@ -71,7 +71,7 @@
     </dependency>
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
-      <artifactId>camunda-bpm-spring-boot-starter-webapp-ee</artifactId>
+      <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
@@ -173,19 +173,20 @@
   </dependencies>
 
   <repositories>
+      <!--
     <repository>
       <id>camunda-bpm-nexus-ee</id>
       <name>Camunda Enterprise Maven Repository</name>
       <url>https://artifacts.camunda.com/artifactory/private/</url>
     </repository>
+-->
 
-    <!--
     <repository>
       <id>camunda-bpm-nexus</id>
       <name>camunda-bpm-nexus</name>
       <url>https://artifacts.camunda.com/artifactory/public/</url>
     </repository>
-    -->
+
 
     <!-- -->
     <repository>
