@@ -8,18 +8,18 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>Exercise3a</module>
-    <module>Exercise2b</module>
-    <module>Exercise3b</module>
-    <module>Exercise4</module>
-    <module>Exercise5</module>
-    <module>Exercise6</module>
-    <module>Exercise7</module>
-    <module>Exercise8</module>
-    <module>Exercise9</module>
-    <module>Exercise9_ExternalTaskWorker</module>
-    <module>Exercise11</module>
-      <module>Exercise12</module>
+    <module>Ex5</module>
+    <module>Ex4</module>
+    <module>Ex6</module>
+    <module>Ex7</module>
+    <module>Ex8</module>
+    <module>Ex9</module>
+    <module>Ex10</module>
+    <module>Ex11</module>
+    <module>Ex12_Engine</module>
+    <module>Ex12_ExternalTaskWorker</module>
+    <module>Ex14</module>
+      <module>Ex16</module>
   </modules>
 
   <name>Camunda Spring Boot Application</name>
