@@ -8,8 +8,8 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>Ex5</module>
     <module>Ex4</module>
+    <module>Ex5</module>
     <module>Ex6</module>
     <module>Ex7</module>
     <module>Ex8</module>

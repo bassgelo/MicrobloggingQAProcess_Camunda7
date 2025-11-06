@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Exercise4_oldnumbering</artifactId>
+    <artifactId>Ex7</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
