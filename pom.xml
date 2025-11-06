@@ -26,13 +26,13 @@
   <description>Spring Boot Application using [Camunda](http://docs.camunda.org).</description>
 
   <properties>
-    <camunda.base.version>7.18.0</camunda.base.version>
+    <camunda.base.version>7.24.0</camunda.base.version>
     <camunda.version>${camunda.base.version}-ee</camunda.version>
-    <springBoot.version>2.7.14</springBoot.version>
+    <springBoot.version>3.5.3</springBoot.version>
 
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
-    <version.java>11</version.java>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <version.java>21</version.java>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <failOnMissingWebXml>false</failOnMissingWebXml>
@@ -86,12 +86,12 @@
     <dependency>
       <groupId>org.graalvm.js</groupId>
       <artifactId>js</artifactId>
-      <version>21.1.0</version>
+      <version>22.3.3</version>
     </dependency>
     <dependency>
       <groupId>org.graalvm.js</groupId>
       <artifactId>js-scriptengine</artifactId>
-      <version>21.1.0</version>
+      <version>22.3.3</version>
     </dependency>
 
     <!-- Testing-->

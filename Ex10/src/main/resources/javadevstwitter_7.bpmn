@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Definitions_167o586" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.16.0" camunda:diagramRelationId="ff8cf47a-63ef-4644-8457-00be3e1e3c6f">
-  <bpmn:process id="Process_simpleTQA_exercise7" isExecutable="true">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Definitions_167o586" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.37.0" camunda:diagramRelationId="ff8cf47a-63ef-4644-8457-00be3e1e3c6f">
+  <bpmn:process id="Process_simpleTQA_exercise7" isExecutable="true" camunda:historyTimeToLive="10">
     <bpmn:exclusiveGateway id="Gateway_0db6syt" name="tweet approved ?" default="Flow_1kw7irk">
       <bpmn:incoming>Flow_07in80p</bpmn:incoming>
       <bpmn:outgoing>Flow_1kw7irk</bpmn:outgoing>
@@ -20,7 +20,7 @@
     </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="Flow_07in80p" sourceRef="Activity_0mu7vg3" targetRef="Gateway_0db6syt" />
     <bpmn:sequenceFlow id="Flow_05hxq9q" sourceRef="Activity_1ws3d0o" targetRef="Activity_0mu7vg3" />
-    <bpmn:serviceTask id="Activity_1gd9a51" name="Publish Tweet" camunda:class="com.camunda.training.CreateTweetDelegate">
+    <bpmn:serviceTask id="Activity_1gd9a51" name="Publish Tweet" camunda:asyncBefore="true" camunda:class="com.camunda.training.CreateTweetDelegate">
       <bpmn:documentation textFormat="text/x-comments" />
       <bpmn:incoming>Flow_1kw7irk</bpmn:incoming>
       <bpmn:incoming>Flow_07wjs4b</bpmn:incoming>
